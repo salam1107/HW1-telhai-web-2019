@@ -1,7 +1,7 @@
 # HW1-telhai-web-2019
-# head: mohammad heib
+# mohammad heib
 
-# salam abu saleh
+# head:salam abu saleh
 
 # majd hanna
 
