@@ -1,1 +1,191 @@
- 
+html
+{
+    scroll-behavior: smooth;
+}
+  
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top_bar
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #344860;
+    width: 100%;
+    text-align: center; 
+    z-index: 100;
+}
+
+#top_bar a
+{
+    display: inline-flex;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#top_bar a:hover
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#background_profile
+{
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    background-color: #344860;
+    background-image: url(../images/cover.png);
+    background-size: 100%;
+}
+
+#profile_pic
+{
+    position: relative;
+    top: 100px;
+    left: 50%;
+    margin-left: -102px;
+    width: 200px;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+
+#my_name_is, #name, #little_info
+{
+    position: relative;
+    top: 100px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#name
+{
+    top: 70px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+#little_info
+{
+    top: 50px;
+    font-size: 20px;
+}
+
+#likes, #about, #hobbies, #bottom_bar
+{
+    position: relative;
+    top: 580px;
+    text-align: center;
+}
+
+#likes_title, #about_title, #hobbies_title
+{
+    text-align: center;
+    color: #344860;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#likes_counter
+{
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: #d6dadf;
+    border: 4px solid #344860;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 3px grey;
+}
+
+#likes_num
+{
+    position: relative;
+    top: 27%;
+}
+
+#like_btn
+{
+    border: none;
+    color: white;
+    background-color: #344860;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+#like_btn:hover
+{
+    background-color: #2a3a4d;
+}
+
+#about_table
+{
+    color: #344860;
+}
+
+#about_table th
+{
+    float: left;
+    text-transform: uppercase;
+}
+
+#about_table td
+{
+    padding-left: 20px;
+}
+
+.hobbies_item
+{
+    display: inline-flex;
+    background-color: #d6dadf;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px solid #344860;
+    box-shadow: 0px 0px 10px 3px grey;
+    margin: 10px;
+}
+
+.hobbies_item p
+{
+    position: relative;
+    top: 53px;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px;
+    text-align: center;
+    word-wrap: break-word;
+    color: #344860;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#bottom_bar
+{
+    background-color: #344860;
+    padding: 8px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#bottom_bar p
+{
+    color: white;
+    font-size: 18px;
+}
