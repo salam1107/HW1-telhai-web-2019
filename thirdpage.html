@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website | Profile Page</title>
+        <link rel="stylesheet" type="text/css" href="./css/thirdpage.css">
+    </head>
+    <body>
+        <div id="top_bar">
+            <a href="#">Home</a>
+            <a href="#">Button</a>
+            <a href="#">Another button</a>
+        </div>
+        <div id="background_profile">
+            <img id="profile_pic" src="http://www.handsomemengalaxy.com/wp-content/uploads/2016/05/Handsome-Man-of-the-Day-Beautiful-man-dog-Connects-to-this-profile-of-Instagram-that.jpg" />
+            <p id="my_name_is">My name is</p>
+            <p id="name">Givolaj Dan</p>
+            <hr style="position: relative; top: 50px; width: 350px;">
+            <p id="little_info">It appears that Mr. Dan does not actually exist</p>
+        </div>
+        <div id="likes">
+            <p id="likes_title">Likes</p>
+            <div id="likes_counter">
+                <p id="likes_num"></p>
+            </div>
+            <br/>
+            <button id="like_btn" onclick="like_btn_handle()">Like</button>
+        </div>
+        <br/>
+        <hr style="position: relative; top: 580px; color: #344860;">
+        <br/>
+        <div id="about">
+            <p id="about_title">About</p>
+            <center>
+                <table id="about_table">
+                    <tr>
+                        <th>Name:</th>
+                        <td>Givolaj Dan</td>
+                    </tr>
+                    <tr>
+                        <th>Mobile Number:</th>
+                        <td>(650)444-1234</td>
+                    </tr>
+                    <tr>
+                        <th>Work Number:</th>
+                        <td>(323)444-6789</td>
+                    </tr>
+                    <tr>
+                        <th>Personal Email:</th>
+                        <td>GivolajDan@example.com</td>
+                    </tr>
+                    <tr>
+                        <th>Work Email:</th>
+                        <td>Givolaj_Dan@example.com</td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <br/>
+        <hr style="position: relative; top: 580px; color: #344860;">
+        <br/>
+        <div id="hobbies">
+            <p id="hobbies_title">Hobbies</p>
+            <center>
+                <div class="hobbies_item">
+                    <p>First hobby</p>
+                </div>
+                <div class="hobbies_item">
+                    <p>Second hobby</p>
+                </div>
+                <div class="hobbies_item">
+                    <p>Third hobby</p>
+                </div>
+            </center>
+        </div>
+        <br/>
+        <hr style="position: relative; top: 580px; color: #344860;">
+        <br/>
+        <div id="bottom_bar">
+            <p>This is our first website homework.</p>
+            <p>Students in our team: Majd Hanna, Mohammad Heib, Salam Abu Saleh, Ayal Sabag and Bshara Hamati.</p>
+        </div>
+        <script>
+            var likes_number = 0;
+            document.getElementById("likes_num").innerText = likes_number + " Likes";
+            function like_btn_handle()
+            {
+                if(document.getElementById("like_btn").innerText == "Like")
+                {
+                    likes_number++;
+                    document.getElementById("likes_num").innerText = likes_number + " Likes";
+                    document.getElementById("like_btn").innerText = "Unlike";
+                }
+                else
+                {
+                    likes_number--;
+                    document.getElementById("likes_num").innerText = likes_number + " Likes";
+                    document.getElementById("like_btn").innerText = "Like";
+                }
+            }
+        </script>
+    </body>
+</html>
