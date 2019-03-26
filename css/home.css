@@ -73,7 +73,6 @@ body
 #profiles_content
 {
     width: 50%;
-    height: 200px;
 }
 
 #profiles_content a
@@ -109,7 +108,7 @@ body
 #bottom_bar
 {
     position: relative;
-    top: 520px;
+    top: 300px;
     text-align: center;
     background-color: #344860;
     padding: 8px;
